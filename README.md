@@ -1,6 +1,4 @@
-🚗 Smartphone-Based Pothole Detection System using YOLOv8
-
-Real-Time Day and Night Road Condition Monitoring
+🚗 Smartphone Detection System Using YOLOv8 for Real-Time Day and Night Road Condition Monitoring
 
 📌 Project Overview
 
