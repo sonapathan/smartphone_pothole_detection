@@ -83,10 +83,10 @@ Nighttime Evaluation
 
 👨‍🏫 Contributors
 
-Mr. Zeeshan Qureshi – Lecturer, Department of Information and Computing Sciences, University of Sufism and Modern Sciences, Bhit Shah
+Mr. Zeeshan Qureshi – Lecturer, Department of Information and Computing , University of Sufism and Modern Sciences, Bhit Shah
 
-Sona Pathan – Research Scholar
+Sona Pathan – Research Scholar, University of Sufism and Modern Sciences, Bhit Shah
 
-Mehwish Rajput – Research Scholar
+Mehwish Rajput – Research Scholar, University of Sufism and Modern Sciences, Bhit Shah
 
-Tamsila Mirjat – Research Schola
+Tamsila Mirjat – Research Schola, University of Sufism and Modern Sciences, Bhit Shah
