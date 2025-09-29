@@ -28,7 +28,7 @@ Frameworks: Kivy (GUI), Flask (optional backend)
 
 Deep Learning: YOLOv8 (Ultralytics)
 
-Image Enhancement: Zero-DCE (for low-light images)
+Image Enhancement: opencv (for low-light images)
 
 Voice Recognition: Vosk (offline speech-to-text)
 
