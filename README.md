@@ -8,7 +8,7 @@ This project presents a real-time pothole and sinkhole detection system designed
 
 📱 Smartphone-Compatible: Works on Android via Kivy & Buildozer
 
-🌗 Day & Night Detection: Integrated Zero-DCE for low-light enhancement
+🌗 Day & Night Detection: Integrated opencv for low-light enhancement
 
 🎙 Voice Control: Hands-free operation using offline speech recognition (Vosk)
 
