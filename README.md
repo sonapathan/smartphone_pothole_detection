@@ -36,6 +36,10 @@ Deployment: Buildozer (Android APK)
 🔹 Clone Repository
 git clone https://github.com/sonapathan/smartphone_pothole_detection.git
 cd smartphone_pothole_detection
+📁 Roboflow Models / Data Sources
+Daytime Model: Roboflow Day Model
+Nighttime Model: Roboflow Night Model
+These links point to the datasets/models used for training the YOLOv8 detection system.
 
 🔹 Install Dependencies
 pip install -r requirements.txt
