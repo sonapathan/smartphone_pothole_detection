@@ -1,0 +1,133 @@
+🚗 Smartphone-Based Pothole Detection System using YOLOv8 Real-Time Day and Night Road Condition Monitoring
+
+
+ 📌 Overview
+This project presents a **real-time pothole detection system** built for **smartphones**, leveraging the **YOLOv8 deep learning model**. It monitors road conditions during both **day and night** using:  
+
+- 📷 Camera-based detection (YOLOv8)
+- 📍 Smartphone sensors (GPS, accelerometer) 
+- 🌙 Dynamic low-light adaptation for night conditions
+
+The system aims to improve road safety by identifying potholes and sinkholes in real time, alerting drivers, and enabling road authorities to take preventive measures.  
+
+
+🚀 Features
+- ✅ Real-Time Detection of potholes and sinkholes on roads  
+- ✅ Day & Night Monitoring with enhanced detection under low-light conditions  
+- ✅ YOLOv8-based Deep Learning Model for high accuracy  
+- ✅ Smartphone Integration (camera + sensors)  
+- ✅ Voice Alerts for detected hazards  
+- ✅ GPS-based Location Tagging for pothole reporting  
+- ✅ Lightweight & Deployable on Android using Buildozer (Python + Kivy)  
+
+ 🏗️ System Architecture
+1. Data Collection– Road images/videos (day & night)  
+2. Preprocessing – Resizing, noise reduction, low-light enhancement (OpenCV)  
+3. Model Training– YOLOv8 with transfer learning + augmentation  
+4. Evaluation– Confusion matrix, PR curves, mAP, Precision/Recall  
+5. Deployment– Kivy Android app with accelerometer and GPS support  
+6. Real-Time Monitoring – Detection + alerts + location saving  
+
+
+## 📚 Libraries & Dependencies
+
+### 🔹 Python Standard Library
+`os`, `glob`, `yaml`, `time`, `threading`, `pathlib (Path)`, `speech_recognition (sr)`  
+
+### 🔹 Kivy Framework
+`kivy.app.App`, `kivy.uix.boxlayout.BoxLayout`, `kivy.uix.image.Image`,  
+`kivy.uix.label.Label`, `kivy.uix.popup.Popup`, `kivy.uix.filechooser.FileChooserIconView`,  
+`kivy.clock.Clock`, `kivy.graphics.texture.Texture`, `kivy.core.window.Window`,  
+`kivy.utils.get_color_from_hex`, `kivy.uix.behaviors.ButtonBehavior`,  
+`kivy.graphics.Color`, `kivy.graphics.RoundedRectangle`  
+
+### 🔹 Machine Learning / AI
+`torch`, `ultralytics.YOLO`, `roboflow.Roboflow`, `opencv-python (cv2)`,  
+`plyer.gps`, `plyer.accelerometer`  
+
+### 🔹 Text-to-Speech
+`pyttsx3`  
+
+### 🔹 Colab-Specific
+`google.colab.drive`  
+
+---
+
+## ⚙️ Tech Stack
+- Deep Learning Model: YOLOv8 (Ultralytics)  
+- Programming Language: Python  
+- Mobile Framework: Kivy (for Android app)  
+- Deployment Tool: Buildozer  
+- Image Enhancement: Zero-DCE (for night images)  
+- Sensors: GPS, Accelerometer  
+- Backend (optional):Flask (for alerts & monitoring)  
+
+---
+
+## 📊 Results
+- **Precision:** 0.877  
+- **Recall:** 0.848  
+- **mAP@0.5:** 0.916  
+
+The system works effectively in both **daytime and nighttime road conditions**.  
+
+---
+
+## 📥 Installation & Setup
+
+### 🔹 Requirements
+- Python 3.9+  
+- Kivy  
+- Buildozer (for Android deployment)  
+- Ultralytics YOLOv8  
+- OpenCV, NumPy, Torch  
+- Vosk (optional for offline voice recognition)  
+
+
+Install dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Train or download the pre-trained YOLOv8 model:
+
+bash
+Copy code
+yolo task=detect mode=train model=yolov8n.pt data=data.yaml epochs=50 imgsz=640
+Run detection on test data:
+
+bash
+Copy code
+yolo task=detect mode=predict model=best.pt source="road_test.mp4"
+Build Android app:
+
+bash
+Copy code
+buildozer android debug
+Install the APK on your smartphone
+
+📱 App Workflow
+Start the app → Camera & GPS activated
+
+Real-time detection begins → Alerts if pothole detected
+
+📷 Sample Outputs
+(Add screenshots of detection in daytime and nighttime here)
+
+👨‍💻 Contributors
+Supervisor: Mr. Zeeshan Qureshi – Project Lead & Developer
+
+Group Members:
+
+Sona Pathan – 2k21 BS-IT #17
+
+Tamsila Mirjat – 2k21 BS-IT #43
+
+Mehwish Rajput – 2k21 BS-IT #32
+
+University of Sufism and Modern Sciences, Bhit Shah
+
+📁 Roboflow Models / Data Sources
+Daytime Model: Roboflow Day Model
+
+Nighttime Model: Roboflow Night Model
